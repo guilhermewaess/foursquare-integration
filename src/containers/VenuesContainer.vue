@@ -30,7 +30,6 @@ export default {
     async onFilter(filter) {
       try {
         this.venues = await search(filter);
-        debugger;
       } catch (error) {
         this.venues = emptyVenues;
         console.log(error);
