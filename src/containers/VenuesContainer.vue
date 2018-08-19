@@ -1,7 +1,8 @@
 <template>
   <div>
     <VenueFilter @onFilter="onFilter"></VenueFilter>
-    <Venues :venues="venues"></Venues>
+    <Venues :venues="venues"
+            :loading="loading"></Venues>
   </div>
 </template>
 
@@ -21,18 +22,25 @@ export default {
     Venues,
     VenueFilter,
   },
+  mounted() {
+    // this.onFilter({});
+  },
   data() {
     return {
       venues: emptyVenues,
+      loading: true,
     };
   },
   methods: {
     async onFilter(filter) {
+      this.loading = true;
       try {
         this.venues = await search(filter);
       } catch (error) {
         this.venues = emptyVenues;
         console.log(error);
+      } finally {
+        this.loading = false;
       }
     },
   },

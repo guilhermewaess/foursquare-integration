@@ -2,13 +2,28 @@
   <v-container fluid
                grid-list-md
                class="pa-0">
+
+    <v-layout column
+              justify-center
+              v-if="loading">
+      <v-progress-circular :size="128"
+                           :width="10"
+                           color="primary"
+                           class="loader"
+                           indeterminate>
+      </v-progress-circular>
+    </v-layout>
+
     <v-data-iterator :items="venues.groups[0].items"
                      :rows-per-page-items="rowsPerPageItems"
                      :pagination.sync="pagination"
+                     :loading="true"
                      content-tag="v-layout"
                      item-key="referralId"
                      row
-                     wrap>
+                     wrap
+                     v-if="!loading"
+                     key="transition-key-data-venues">
       <v-flex slot="item"
               slot-scope="props"
               xs12>
@@ -57,7 +72,11 @@ export default {
   props: {
     venues: {
       required: true,
-      type: Array,
+      type: Object,
+    },
+    loading: {
+      required: true,
+      type: Boolean,
     },
   },
   data() {
@@ -71,3 +90,9 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>
+.loader {
+  height: 500px;
+  align-self: center;
+}
+</style>
