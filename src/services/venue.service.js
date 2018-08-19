@@ -3,7 +3,7 @@ import foursquareConf from './../../foursquare.conf';
 
 const geoLocationOptions = {
   enableHighAccuracy: true,
-  timeout: 3000,
+  timeout: 15000,
   maximumAge: 0,
 };
 

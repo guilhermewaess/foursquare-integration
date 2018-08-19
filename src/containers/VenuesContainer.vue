@@ -23,7 +23,7 @@ export default {
     VenueFilter,
   },
   mounted() {
-    // this.onFilter({});
+    this.onFilter({});
   },
   data() {
     return {
