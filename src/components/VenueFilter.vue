@@ -14,7 +14,7 @@
         </v-flex>
         <v-flex xs12
                 sm5>
-          <v-text-field v-model="filter.search"
+          <v-text-field v-model="filter.query"
                         label="Search Term"
                         prepend-icon="search">
           </v-text-field>
@@ -47,7 +47,7 @@ export default {
   data() {
     return {
       filter: {
-        search: '',
+        query: '',
         section: '',
         openNow: true,
       },
@@ -68,7 +68,7 @@ export default {
   },
   methods: {
     search() {
-      console.log(this.filter);
+      this.$emit('onFilter', this.filter);
     },
   },
 };

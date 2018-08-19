@@ -2,7 +2,7 @@
   <v-container fluid
                grid-list-md
                class="pa-0">
-    <v-data-iterator :items="items"
+    <v-data-iterator :items="venues.groups[0].items"
                      :rows-per-page-items="rowsPerPageItems"
                      :pagination.sync="pagination"
                      content-tag="v-layout"
@@ -42,7 +42,6 @@
 </template>
 
 <script>
-import dataMock from './../foursquare-mock';
 import VenueCategoryIcon from './VenueCategoryIcon.vue';
 import VenueDistance from './VenueDistance.vue';
 import VenueInformations from './VenueInformations.vue';
@@ -55,9 +54,14 @@ export default {
     VenueDistance,
     VenueInformations,
   },
+  props: {
+    venues: {
+      required: true,
+      type: Array,
+    },
+  },
   data() {
     return {
-      items: dataMock.response.groups[0].items,
       rowsPerPageItems: [5, 10, 20],
       pagination: {
         rowsPerPage: 5,

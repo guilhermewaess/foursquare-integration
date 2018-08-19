@@ -5,22 +5,19 @@
               justify-center>
       <v-flex xs12
               md6>
-        <VenueFilter></VenueFilter>
-        <Venues></Venues>
+        <VenuesContainer></VenuesContainer>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 
 <script>
-import Venues from './../components/Venues.vue';
-import VenueFilter from './../components/VenueFilter.vue';
+import VenuesContainer from './../containers/VenuesContainer.vue';
 
 export default {
   name: 'Home',
   components: {
-    Venues,
-    VenueFilter,
+    VenuesContainer,
   },
 };
 </script>
