@@ -5,6 +5,7 @@
               justify-center>
       <v-flex xs12
               md6>
+        <VenueFilter></VenueFilter>
         <Venues></Venues>
       </v-flex>
     </v-layout>
@@ -13,11 +14,13 @@
 
 <script>
 import Venues from './../components/Venues.vue';
+import VenueFilter from './../components/VenueFilter.vue';
 
 export default {
   name: 'Home',
   components: {
     Venues,
+    VenueFilter,
   },
 };
 </script>

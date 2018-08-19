@@ -10,8 +10,11 @@ import {
   VBtn,
   VIcon,
   VGrid,
+  VTextField,
   VToolbar,
   VTooltip,
+  VSelect,
+  VSwitch,
   transitions,
 } from 'vuetify';
 import 'vuetify/src/stylus/app.styl';
@@ -27,8 +30,11 @@ Vue.use(Vuetify, {
     VBtn,
     VIcon,
     VGrid,
+    VTextField,
     VToolbar,
     VTooltip,
+    VSelect,
+    VSwitch,
     transitions,
   },
   theme: {
