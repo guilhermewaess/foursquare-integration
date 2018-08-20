@@ -3,12 +3,11 @@
     <v-tooltip right
                color="primary">
       <v-card-media :src="getIconSrc()"
-                    height="100px"
                     class="border-50"
                     contain
                     slot="activator">
       </v-card-media>
-      <span>{{category.pluralName}}</span>
+      <div>{{category.pluralName}}</div>
     </v-tooltip>
   </div>
 </template>
@@ -37,8 +36,16 @@ export default {
 
 <style lang="scss">
 .icon-container {
+  height: 100%;
   position: relative;
-
+  * {
+    height: 100%;
+  }
+  .v-card__media {
+    * {
+      min-height: 100px;
+    }
+  }
   .border-50 {
     border-radius: 50%;
   }

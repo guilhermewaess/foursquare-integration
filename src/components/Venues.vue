@@ -27,7 +27,7 @@
       <v-flex slot="item"
               slot-scope="props"
               xs12>
-        <v-card height="100px">
+        <v-card height="auto">
           <v-container fluid
                        class="pt-0 pb-0 pl-1 pr-1 mb-1">
             <v-layout row>

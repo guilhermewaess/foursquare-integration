@@ -6,7 +6,10 @@
       <v-layout align-center
                 justify-center>
         <v-flex xs12
-                md6>
+                sm11
+                md11
+                lg8
+                xl6>
           <VenuesContainer></VenuesContainer>
         </v-flex>
       </v-layout>
