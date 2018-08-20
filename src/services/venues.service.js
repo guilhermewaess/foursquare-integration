@@ -1,7 +1,7 @@
 import axios from 'axios';
 import foursquareConf from './../../foursquare.conf';
 
-const geoLocationOptions = {
+const currentPositionOptions = {
   enableHighAccuracy: true,
   timeout: 15000,
   maximumAge: 0,
@@ -20,7 +20,7 @@ function getLocation() {
       () => {
         resolve(defaultLocation);
       },
-      geoLocationOptions,
+      currentPositionOptions,
     );
   });
 }

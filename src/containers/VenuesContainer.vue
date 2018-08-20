@@ -9,7 +9,7 @@
 <script>
 import Venues from './../components/Venues.vue';
 import VenueFilter from './../components/VenueFilter.vue';
-import search from './../services/venue.service';
+import search from './../services/venues.service';
 
 const emptyVenues = {
   totalResults: 0,
