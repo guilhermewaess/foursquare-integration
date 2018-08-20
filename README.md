@@ -1,11 +1,12 @@
 # foursquare-integration
 
-(Link demo)[https://foursquare-guiwaess.firebaseapp.com]
+<a href="https://foursquare-guiwaess.firebaseapp.com" target="_blank">Link demo!</a>
 
 ## Project setup
 ```
 npm install
 
+```
 You must create a file on root folder with name: foursquare.conf.js
 
 ```javascript
@@ -13,8 +14,6 @@ export default {
   clientId: 'your client_id',
   clientSecret: 'your client_secret',
 };
-
-```
 
 ### Compiles and hot-reloads for development
 ```
