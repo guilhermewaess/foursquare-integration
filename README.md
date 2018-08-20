@@ -3,6 +3,15 @@
 ## Project setup
 ```
 npm install
+
+You must create a file on root folder with name: foursquare.conf.js
+
+```javascript
+export default {
+  clientId: 'your client_id',
+  clientSecret: 'your client_secret',
+};
+
 ```
 
 ### Compiles and hot-reloads for development
