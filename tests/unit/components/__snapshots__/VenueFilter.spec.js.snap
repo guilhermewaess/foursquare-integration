@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VenueFilter snapshot should render 1`] = `
+<v-container-stub
+  class="pa-0"
+>
+  <form>
+    <v-layout-stub
+      row=""
+    >
+      <v-flex-stub
+        sm2=""
+        xs12=""
+      >
+        <v-select-stub
+          class="pr-4"
+          item-text="name"
+          item-value="value"
+          items="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+          label="Section"
+        />
+      </v-flex-stub>
+       
+      <v-flex-stub
+        sm5=""
+        xs12=""
+      >
+        <v-text-field-stub
+          label="Search Term"
+          prepend-icon="search"
+        />
+      </v-flex-stub>
+       
+      <v-flex-stub
+        sm3=""
+        xs12=""
+      >
+        <v-switch-stub
+          class="pl-5"
+          color="primary"
+          label="Open Now"
+        />
+      </v-flex-stub>
+       
+      <v-flex-stub
+        sm2=""
+        xs12=""
+      >
+        <v-btn-stub
+          block=""
+          class="mt-3"
+          color="primary"
+          dark=""
+          outline=""
+          type="submit"
+        >
+          Search
+        </v-btn-stub>
+      </v-flex-stub>
+    </v-layout-stub>
+  </form>
+</v-container-stub>
+`;

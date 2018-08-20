@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader snapshot should render 1`] = `
+<v-jumbotron-stub
+  dark=""
+  src="https://s3.eu-central-1.amazonaws.com/euobs-media/107425944ee4ad8015c1082c05c7df8a.jpg"
+>
+  <v-container-stub
+    fill-height=""
+  >
+    <v-layout-stub
+      align-center=""
+    >
+      <v-flex-stub
+        text-xs-center=""
+      >
+        <h3
+          class="display-3"
+        >
+          Welcome to Foursquare Venue
+        </h3>
+         
+        <h1
+          class="body-1"
+        >
+          
+          **Please, allow chrome to access you location, otherwise we will consider you in the center of Amsterdam**
+        
+        </h1>
+      </v-flex-stub>
+    </v-layout-stub>
+  </v-container-stub>
+</v-jumbotron-stub>
+`;

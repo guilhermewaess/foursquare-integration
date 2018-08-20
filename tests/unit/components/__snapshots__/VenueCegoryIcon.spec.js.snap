@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VenueInformations snapshot should render 1`] = `
+<div
+  class="primary icon-container"
+>
+  <v-tooltip-stub
+    color="primary"
+    right=""
+  >
+     
+    <div>
+      Museums
+    </div>
+  </v-tooltip-stub>
+</div>
+`;

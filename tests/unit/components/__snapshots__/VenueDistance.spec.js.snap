@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VenueDistance snapshot should render 1`] = `
+<v-layout-stub
+  class="ma-0 primary"
+  column=""
+  fill-height=""
+>
+  <v-flex-stub>
+    <div
+      class="text-xs-center white--text"
+    >
+      Distance
+    </div>
+  </v-flex-stub>
+   
+  <v-flex-stub>
+    <div
+      class="white--text text-xs-center headline font-weight-medium"
+    >
+      
+      100m
+    
+    </div>
+  </v-flex-stub>
+</v-layout-stub>
+`;

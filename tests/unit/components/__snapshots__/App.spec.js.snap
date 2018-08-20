@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot should render 1`] = `
+<v-app-stub>
+  <v-content-stub>
+    <router-view-stub />
+  </v-content-stub>
+</v-app-stub>
+`;

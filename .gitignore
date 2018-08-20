@@ -2,6 +2,7 @@
 node_modules
 /dist
 foursquare.conf.js
+*firebase*
 
 # local env files
 .env.local

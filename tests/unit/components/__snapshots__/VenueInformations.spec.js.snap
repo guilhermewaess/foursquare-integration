@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VenueInformations snapshot should render 1`] = `
+<div>
+  <v-layout-stub
+    row=""
+  >
+    <v-flex-stub
+      class="text-xs-center"
+      xs12=""
+    >
+      <span
+        class="display-1"
+      >
+        Venue
+      </span>
+    </v-flex-stub>
+  </v-layout-stub>
+   
+  <v-layout-stub
+    class="ml-1"
+    row=""
+  >
+    <v-flex-stub
+      xs12=""
+    >
+      <div>
+        Address
+      </div>
+       
+      <span
+        class="body-1"
+      >
+        Aleja Genera 39, 30-001 Kraków, Poland
+      </span>
+    </v-flex-stub>
+  </v-layout-stub>
+</div>
+`;
