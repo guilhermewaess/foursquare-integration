@@ -13,8 +13,10 @@ export default {
   clientId: 'your client_id',
   clientSecret: 'your client_secret',
 };
+```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
