@@ -45,6 +45,7 @@
 export default {
   name: 'VenueFilter',
   data() {
+    // In the future, implement filter based on router params
     return {
       filter: {
         query: '',
